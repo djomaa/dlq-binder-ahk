@@ -1,0 +1,2 @@
+MsgBox New
+exit
