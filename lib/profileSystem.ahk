@@ -11,11 +11,10 @@ class profiles {
   save() {
 
   }
-  _refreshList() {
+  refreshList() {
     loop 32 {
-      msgbox %  "Edit" ( a_index - 1 ) * 2 + 1 " <==> " getKeyName(data[a_index]["hotkey"])
-      GuiControl, mainWin:,% "Edit" ( a_index - 1 ) * 2 + 1, getKeyName(data[a_index]["hotkey"])
-      GuiControl, mainWin:,% "Edit"  a_index * 2, data[a_index]["name"])
+      GuiControl, mainWin:,% "Edit" ( a_index - 1 ) * 2 + 1,% hkc.getName(data[a_index]["hotkey"])
+      GuiControl, mainWin:,% "Edit"  a_index * 2,% data[a_index]["name"]
     }
   }
 }

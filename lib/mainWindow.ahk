@@ -24,7 +24,6 @@
     gui, add, button, x520 yp wp hp, Выход ;TODO
   }
   show() {
-    this.create()
     gui, mainWin: show, w650 h360
   }
 }

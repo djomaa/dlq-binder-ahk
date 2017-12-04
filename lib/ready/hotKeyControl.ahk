@@ -40,7 +40,7 @@ Class HKC {
 				ActivatedModifiers .= Modifiers[A_Index] "+"
 			GuiControl,,% FocusedControl,% ActivatedModifiers HKC.getList("NC")[Key]
 		}
-		
+
 	}
 	getCode(Key) {
 		Static Modifiers := {"LAlt":"<!","RAlt":">!","LCtrl":"<^","RCtrl":">^","LShift":"<+","RShift":">+","LWin":"<#","RWin":">#"}
